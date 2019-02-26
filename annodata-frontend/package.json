@@ -1,0 +1,66 @@
+{
+  "name": "annodata-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "dependencies": {
+    "antd": "^3.13.3",
+    "axios": "^0.18.0",
+    "electron-is-dev": "^1.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-navigation": "^3.2.3",
+    "react-redux": "^6.0.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.1",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-pack": "build --em.main=build/electron.js"
+  },
+  "build": {
+    "appId": "com.peteryuen.annodata",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "homepage": "./",
+  "author": "Peter Yuen",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.4",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-navigation": "^3.0.3",
+    "@types/react-redux": "^7.0.1",
+    "@types/react-router": "^4.4.4",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "concurrently": "^4.1.0",
+    "electron": "^4.0.4",
+    "electron-builder": "^20.38.5",
+    "wait-on": "^3.2.0"
+  }
+}
