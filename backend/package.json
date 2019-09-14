@@ -1,0 +1,59 @@
+{
+  "name": "annodata-backend",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.6",
+    "bluebird": "^3.5.4",
+    "body-parser": "^1.18.3",
+    "busboy": "^0.3.1",
+    "cors": "^2.8.5",
+    "etl": "^0.6.5",
+    "express": "^4.16.4",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mime-types": "^2.1.24",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.5.2",
+    "mongoose-gridfs": "^1.2.3",
+    "multer": "^1.4.1",
+    "query-string": "^6.4.2",
+    "typescript": "^3.3.3",
+    "unzipper": "^0.10.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@types/axios": "^0.14.0",
+    "@types/bcrypt": "^3.0.0",
+    "@types/bluebird": "^3.5.27",
+    "@types/body-parser": "^1.17.0",
+    "@types/busboy": "^0.2.3",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.1",
+    "@types/gridfs-stream": "^0.5.30",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.122",
+    "@types/mime-types": "^2.1.0",
+    "@types/mongoose": "^5.3.26",
+    "@types/multer": "^1.3.7",
+    "@types/unzipper": "^0.9.2",
+    "@types/uuid": "^3.4.5",
+    "@types/webpack-env": "^1.13.8",
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "start:db": "mongod -f ./dbConfig.yml --dbpath ./mongodb/data --logpath ./mongodb/logs"
+  },
+  "author": "Peter Yuen",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
