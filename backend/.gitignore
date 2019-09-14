@@ -1,0 +1,42 @@
+### Production ###
+**/bin/
+**/build/
+**/dist/
+**/out/
+
+### IntelliJ IDEA ###
+**/.idea
+**/.iws
+**/.iml
+**/.ipr
+
+### Spyder project settings ###
+**/.spyderproject
+**/.spyproject
+
+### Miscellaneous ###
+**/.tmp
+**/.DS_Store
+**/.vscode
+
+# dependencies
+node_modules
+mongodb
+UI/data
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.csvnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# secret
+config.ts*
+passwd
+*.csv
+*.xlsx
+**/**/*secret*

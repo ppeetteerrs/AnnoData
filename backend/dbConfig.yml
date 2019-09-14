@@ -1,0 +1,11 @@
+systemLog:
+   destination: file
+   logAppend: true
+storage:
+   journal:
+      enabled: true
+net:
+   bindIp: 0.0.0.0
+   port: 27017
+security:
+  authorization: "disabled"
