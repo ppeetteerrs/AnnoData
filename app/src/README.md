@@ -1,6 +1,6 @@
-# enactus_app
+# Enactus app
+Prototype for the mobile application
 
-A new Flutter application.
 
 ## Getting Started
 
