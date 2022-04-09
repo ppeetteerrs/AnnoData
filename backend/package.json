@@ -15,7 +15,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
     "mime-types": "^2.1.24",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongodb": "^3.2.7",
     "mongoose": "^5.5.2",
     "mongoose-gridfs": "^1.2.3",
